@@ -1,0 +1,5 @@
+streamlit
+plotly
+py3dbp
+numpy
+streamlit-extras
