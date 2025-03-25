@@ -243,7 +243,6 @@ def pack_items_into_box(_box_name, _box_width, _box_height, _box_depth, items, s
     packer = Packer()
     packer.add_bin(box)
     
-    # Rest of your packing logic remains the same...
     # Define multiple sorting strategies based on selected strategy
     if strategy == "Maximize Space":
         sorting_strategies = [
@@ -342,7 +341,6 @@ def pack_items_into_box(_box_name, _box_width, _box_height, _box_depth, items, s
     
     # Post-processing to check stacking stability
     for item in best_packed_bin.items:
-        # Find items below this one
         items_below = [
             i for i in best_packed_bin.items 
             if float(i.position[2]) + float(i.get_dimension()[2]) <= float(item.position[2]) + 0.1 and  # Convert to float
@@ -546,8 +544,6 @@ def create_modern_visualization(packed_bin):
 
 def generate_pdf_report(packed_bin):
     """Generate a PDF report (placeholder - would be implemented with reportlab)"""
-    # In a real implementation, you would use reportlab to generate a PDF
-    # This is a simplified version that creates a downloadable HTML file
     from datetime import datetime
     report = f"""
     <html>
@@ -775,10 +771,10 @@ with col1:
                 
                 for bin in possible_bins:
                     packed_bin = pack_items_into_box(
-                        box_name,  # Pass name instead of box object
-                        box_width,  # Pass width
-                        box_height, # Pass height
-                        box_depth,  # Pass depth
+                        box_name,  
+                        box_width,  
+                        box_height, 
+                        box_depth,  
                         st.session_state.items_to_pack,
                         packing_strategy,
                         max_attempts
