@@ -38,7 +38,7 @@ Click "Pack Items" to optimize the packing
 
 Explore the 3D visualization and packing analytics
 
-🛠️ Technical Details
+## 🛠️ Technical Details
 Core Technologies
 Streamlit: For the web interface
 
@@ -57,7 +57,7 @@ Fragile Item Handling: Prioritizes placement of fragile items
 
 Responsive Design: Works on desktop and mobile devices
 
-📊 Metrics Calculated
+## 📊 Metrics Calculated
 Packing efficiency (% of space used)
 
 Weight distribution (top vs bottom)
@@ -66,14 +66,14 @@ Layer utilization (every 5cm)
 
 Stability assessment
 
-📂 Export Options
+## 📂 Export Options
 PDF Report: Summary of packing configuration
 
 3D Model: Export visualization (placeholder)
 
 CSV Data: Detailed packing information for each item
 
-🎨 UI Components
+## 🎨 UI Components
 Modern dark theme with purple accent colors
 
 Custom metric cards
@@ -82,7 +82,7 @@ Interactive 3D visualization with multiple view options
 
 Responsive layout that adapts to screen size
 
-🤖 AI Recommendations
+## 🤖 AI Recommendations
 The system provides intelligent suggestions for improving packing:
 
 When efficiency is low
@@ -91,10 +91,7 @@ When fragile items are poorly placed
 
 When stacking stability is compromised
 
-📝 License
-MIT License - Free for personal and commercial use
-
-📬 Contact
+## 📬 Contact
 For feature requests or issues, please open an issue on GitHub.
 
 Tip: Use the "Prioritize Stability" strategy for fragile items and "Maximize Space" when you need to fit as much as possible in a single box!
